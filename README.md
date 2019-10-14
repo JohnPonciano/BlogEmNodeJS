@@ -1,5 +1,5 @@
 # BlogEmNodeJS
 Só rodar o " NODEMON app.js "
 
-e para adicionar os post é só usar localhost/admin/posts
-categorias localhost/categorias/
+E para adicionar os Post é só usar http://localhost:4042/admin/posts
+Categorias: http://localhost:4042/admin/categorias
