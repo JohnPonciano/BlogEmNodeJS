@@ -1,0 +1,34 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Bem-vindo ao Blog do Node</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <a href="#" class="btn btn-primary btn-lg" role="button">Crie uma conta</a> 
+  </div>
+</div>
+<hr>
+
+<h2>Posts Recentes</h2>
+<hr>
+<div class="card-deck">
+
+{{#each posts}}
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Assunto: {{categorias.nome}}
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title">{{titulo}}</h5>
+    <p class="card-text">{{descricao}}</p>
+    <a href="/postagem/{{slug}}"><button class="btn btn-primary">Leia mais</button></a>
+  </div>
+  <div class="card-footer">
+    <small >
+      Postado em : {{data}}
+    </small>
+    </div>
+</div>
+{{else}}
+  <h5>NADA AQUI :C </h5>
+{{/each}}
+</div>

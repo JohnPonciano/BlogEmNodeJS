@@ -1,0 +1,26 @@
+<h1>
+{{categorias.nome}}
+</h1>
+
+
+{{#each posts}}
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Assunto: {{categorias.nome}}
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title">{{titulo}}</h5>
+    <p class="card-text">{{descricao}}</p>
+    <a href="/postagem/{{slug}}"><button class="btn btn-primary">Leia mais</button></a>
+  </div>
+  <div class="card-footer">
+    <small >
+      Postado em : {{data}}
+    </small>
+    </div>
+</div>
+{{else}}
+  <h5>NADA AQUI :C </h5>
+{{/each}}
+</div>
